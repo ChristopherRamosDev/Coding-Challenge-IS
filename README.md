@@ -24,9 +24,9 @@ Ambas APIs están contenizados con docker y se comunican vía HTTP usando `docke
 ## Comandos
 
 Clona el repositorio
-   git clone ...
-   cd prueba-tecnica
-   docker compose up --build
+- git clone ...
+- docker compose up --build
+
 
 ## Modo de uso
 ## 📌 POST /qr (API Go) por http post
