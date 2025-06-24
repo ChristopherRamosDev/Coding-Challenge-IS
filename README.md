@@ -31,24 +31,24 @@ Clona el repositorio
 ## Modo de uso
 ## 📌 POST /qr (API Go) por http post
 
-Envía una matriz en el cuerpo de la solicitud como JSON al endpoint de go que es
-http://localhost:3001/qr
+Hacer una peticion post hacia el endpoint de go que es http://localhost:3001/qr y enviar una matriz en el cuerpo de la solicitud como JSON, como el ejemplo mostrado
+
+{ "data": [ [1, 2], [3, 4] ] }
+
+En caso de que el formato no sea el indicado la respuesta que vera será 
 
 {
-  "data": [
-    [1, 2],
-    [3, 4]
-  ]
+    "error": "El formato de la solicitud no es válido."
 }
 
-## Response
+En caso de que el formato sea correcto el response code seria 200 y la respuesta seria dependiendo de la matriz que se mande, un ejemplo seria
 
 {
-  "max": 5.464,
-  "min": 0,
-  "sum": 12.232,
-  "average": 1.53,
-  "isDiagonal": false
+    "average": -1.3416407864998738,
+    "isDiagonal": false,
+    "max": 0.4472135954999581,
+    "min": -6.708203932499369,
+    "sum": -10.73312629199899
 }
 
 
