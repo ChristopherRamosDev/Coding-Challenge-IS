@@ -31,7 +31,8 @@ Clona el repositorio
 ## Modo de uso
 ## 📌 POST /qr (API Go) por http post
 
-Envía una matriz en el cuerpo de la solicitud como JSON
+Envía una matriz en el cuerpo de la solicitud como JSON al endpoint de go que es
+http://localhost:3001/qr
 
 {
   "data": [
